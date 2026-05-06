@@ -7,7 +7,7 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-public class FeedBackRequest {
+public class FeedbackRequest {
 
     private String descricao;
     private int nota;

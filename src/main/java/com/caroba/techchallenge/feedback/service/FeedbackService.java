@@ -1,6 +1,6 @@
 package com.caroba.techchallenge.feedback.service;
 
-import com.caroba.techchallenge.feedback.model.FeedBack;
+import com.caroba.techchallenge.feedback.model.Feedback;
 import com.caroba.techchallenge.feedback.model.FeedBackRequest;
 import com.caroba.techchallenge.feedback.repository.FeedBackRepository;
 import org.springframework.stereotype.Service;
@@ -25,7 +25,7 @@ public class FeedbackService {
 
         String urgencia = definirUrgencia(request.getNota());
 
-        FeedBack feedback = new FeedBack();
+        Feedback feedback = new Feedback();
         feedback.setDescricao(request.getDescricao());
         feedback.setNota(request.getNota());
         feedback.setUrgencia(urgencia);

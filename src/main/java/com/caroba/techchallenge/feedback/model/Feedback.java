@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Data
 @Getter
 @Setter
-public class FeedBack {
+public class Feedback {
     private String descricao;
     private int nota;
     private String urgencia;
