@@ -1,7 +1,7 @@
 package com.caroba.techchallenge.feedback.service;
 
 import com.caroba.techchallenge.feedback.model.Feedback;
-import com.caroba.techchallenge.feedback.model.FeedBackRequest;
+import com.caroba.techchallenge.feedback.model.FeedbackRequest;
 import com.caroba.techchallenge.feedback.repository.FeedBackRepository;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ public class FeedbackService {
         this.notificationService = notificationService;
     }
 
-    public void processFeedback(FeedBackRequest request) {
+    public void processFeedback(FeedbackRequest request) {
 
         validar(request);
 
@@ -38,7 +38,7 @@ public class FeedbackService {
         }
     }
 
-    private void validar(FeedBackRequest request) {
+    private void validar(FeedbackRequest request) {
         if (request.getDescricao() == null || request.getDescricao().isBlank()) {
             throw new RuntimeException("Descrição obrigatória");
         }
